@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jainil.myapplication.feedback"
+    tools:showIn="@layout/activity_feedback"
+    android:background="@drawable/chapter05">
+
+    <TextView
+        android:text="Thanks for Rating. Give some time in feedback."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView16"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColorHighlight="@android:color/holo_orange_light"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:hint="Feedback"
+        android:singleLine="false"
+        android:cursorVisible="false"
+        android:layout_above="@+id/button6" />
+
+    <Button
+        android:text="submit and check our new sudoku solver also"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button6"
+        android:onClick="sudoku"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

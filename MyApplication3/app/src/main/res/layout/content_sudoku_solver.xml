@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sudoku_solver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jainil.myapplication.SudokuSolver"
+    tools:showIn="@layout/activity_sudoku_solver"
+    android:background="@drawable/abc">
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:hint="row3 Enter 0 for unknown"
+            android:layout_below="@+id/editText2"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/editText2"
+            android:background="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:hint="row4 Enter 0 for unknown"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText6"
+            android:hint="row6 Enter 0 for unknown"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/editText5"
+            android:background="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText7"
+            android:hint="row7 Enter 0 for unknown"
+            android:layout_below="@+id/editText6"
+            android:layout_alignEnd="@+id/editText6"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text|textPersonName"
+            android:ems="10"
+            android:id="@+id/editText1"
+            android:hint="row1 Enter 0 for unknown"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:hint="row5 Enter 0 for unknown"
+            android:layout_below="@+id/editText4"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText8"
+            android:hint="row8 Enter 0 for unknown"
+            android:layout_below="@+id/editText7"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/editText7"
+            android:background="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Button
+            android:text="solve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:onClick="onbutclick"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/ratingBar2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="row2 Enter 0 for unknown"
+            android:layout_below="@+id/editText1"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText9"
+            android:hint="row9 Enter 0 for unknown"
+            android:layout_below="@+id/editText8"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:text="                                                                                                       PLEASE RATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ratingBar2"
+            android:id="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:fontFeatureSettings="@string/app_name"
+            android:background="@android:color/holo_orange_light"
+            android:layout_below="@+id/editText9"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/textView2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <Button
+            android:text="RATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:onClick="onrate"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView3" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar2"
+            android:layout_alignTop="@+id/button4"
+            android:layout_toStartOf="@+id/button4" />
+
+
+</RelativeLayout>

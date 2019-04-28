@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jainil.myapplication.MainActivity"
+    android:fadeScrollbars="false"
+    android:background="@drawable/abc">
+
+    <Button
+    android:text="Multiplication"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button5"
+    android:onClick="mulclick"
+    android:textAppearance="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+    android:layout_marginStart="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+    android:text="division"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:id="@+id/button4"
+    android:onClick="divclick"
+    android:textAppearance="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:text="subtraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="subclick"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+        android:layout_marginEnd="17dp"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_toStartOf="@+id/button4" />
+
+    <Button
+    android:text="SOLVE POLYNOMIAL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button"
+    android:onClick="btnclick"
+    android:textAppearance="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="addition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="addclick"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignParentStart="true" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+            <TextView
+                android:text="ENTER FIRST POLYNOMIAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView2"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:background="@android:color/holo_orange_light"
+                android:backgroundTint="@android:color/holo_orange_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:backgroundTintMode="multiply"
+                android:background="@android:color/darker_gray"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:text="ENTER SECOND POLYNOMIAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView3"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:background="@android:color/holo_orange_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="MULTIPLICATION IS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:layout_below="@+id/editText2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentStart="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:text="ADDITION IS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:id="@+id/textView10"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:background="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView11"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:text="SUBTRACTION IS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:layout_below="@+id/textView11"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:background="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView12"
+                android:id="@+id/textView9"
+                android:layout_alignParentStart="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:text="DIVISION IS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:background="@android:color/holo_orange_dark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:layout_below="@+id/textView9"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="REMAINDER IS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:background="@android:color/holo_orange_dark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:layout_below="@+id/textView15"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true" />
+            
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="help" />
+
+</RelativeLayout>
